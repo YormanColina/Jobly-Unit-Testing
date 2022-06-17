@@ -10,6 +10,8 @@
 		181568D2285D1EEC009CE3C7 /* ApiServiceHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F71E4D285A6A2900FF48CD /* ApiServiceHome.swift */; };
 		181568D9285D2286009CE3C7 /* ApiServicesFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181568D8285D2286009CE3C7 /* ApiServicesFake.swift */; };
 		181568DF285D439C009CE3C7 /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181568DE285D439C009CE3C7 /* ModelTests.swift */; };
+		181568E2285D488B009CE3C7 /* FuntionalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181568E1285D488B009CE3C7 /* FuntionalTests.swift */; };
+		181568E4285D4904009CE3C7 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181568E3285D4904009CE3C7 /* Functions.swift */; };
 		18F71E49285A692E00FF48CD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18F71E48285A692E00FF48CD /* GoogleService-Info.plist */; };
 		18F71E4A285A692E00FF48CD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18F71E48285A692E00FF48CD /* GoogleService-Info.plist */; };
 		18F71E4B285A692E00FF48CD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18F71E48285A692E00FF48CD /* GoogleService-Info.plist */; };
@@ -63,6 +65,8 @@
 /* Begin PBXFileReference section */
 		181568D8285D2286009CE3C7 /* ApiServicesFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServicesFake.swift; sourceTree = "<group>"; };
 		181568DE285D439C009CE3C7 /* ModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
+		181568E1285D488B009CE3C7 /* FuntionalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuntionalTests.swift; sourceTree = "<group>"; };
+		181568E3285D4904009CE3C7 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		18F71E48285A692E00FF48CD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		18F71E4D285A6A2900FF48CD /* ApiServiceHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceHome.swift; sourceTree = "<group>"; };
 		18F71E55285A989000FF48CD /* MockHome.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockHome.json; sourceTree = "<group>"; };
@@ -149,12 +153,12 @@
 			path = TestModels;
 			sourceTree = "<group>";
 		};
-		181568DC285D4277009CE3C7 /* TestVieWModel */ = {
+		181568DC285D4277009CE3C7 /* TestViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				F995C95827E57FF4008DE852 /* JoblyTests.swift */,
 			);
-			path = TestVieWModel;
+			path = TestViewModel;
 			sourceTree = "<group>";
 		};
 		181568DD285D429B009CE3C7 /* MockJSON */ = {
@@ -163,6 +167,15 @@
 				18F71E55285A989000FF48CD /* MockHome.json */,
 			);
 			path = MockJSON;
+			sourceTree = "<group>";
+		};
+		181568E0285D4871009CE3C7 /* FuntionalTests */ = {
+			isa = PBXGroup;
+			children = (
+				181568E1285D488B009CE3C7 /* FuntionalTests.swift */,
+				181568E3285D4904009CE3C7 /* Functions.swift */,
+			);
+			path = FuntionalTests;
 			sourceTree = "<group>";
 		};
 		18F71E4C285A69BB00FF48CD /* ProvidersHome */ = {
@@ -233,8 +246,9 @@
 		F995C95727E57FF4008DE852 /* JoblyTests */ = {
 			isa = PBXGroup;
 			children = (
+				181568E0285D4871009CE3C7 /* FuntionalTests */,
 				181568DD285D429B009CE3C7 /* MockJSON */,
-				181568DC285D4277009CE3C7 /* TestVieWModel */,
+				181568DC285D4277009CE3C7 /* TestViewModel */,
 				181568DB285D425A009CE3C7 /* TestModels */,
 				181568DA285D423B009CE3C7 /* FakeApi */,
 			);
@@ -644,6 +658,8 @@
 			files = (
 				181568DF285D439C009CE3C7 /* ModelTests.swift in Sources */,
 				F995C95927E57FF4008DE852 /* JoblyTests.swift in Sources */,
+				181568E2285D488B009CE3C7 /* FuntionalTests.swift in Sources */,
+				181568E4285D4904009CE3C7 /* Functions.swift in Sources */,
 				181568D9285D2286009CE3C7 /* ApiServicesFake.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
