@@ -1,0 +1,166 @@
+{
+  "widgets": [
+    {
+      "id": "1nkbj12bjkjkas9u1lneq",
+      "title": "Categories",
+      "type": "Categories",
+      "values": [
+        {
+          "id": 111,
+          "image": "https://i.imgur.com/nmSVbfs.png",
+          "color": "#E9ECE6",
+          "title": "Popular"
+        },
+        {
+          "id": 112,
+          "image": "https://i.imgur.com/lqE5Rw0.png",
+          "color": "#EFF0F2",
+          "title": "Photography"
+        },
+        {
+          "id": 113,
+          "image": "https://i.imgur.com/jSpDwys.png",
+          "color": "#F3F2FA",
+          "title": "Visual Design"
+        },
+        {
+          "id": 114,
+          "image": "https://i.imgur.com/nmSVbfs.png",
+          "color": "#E9ECE6",
+          "title": "Mobile"
+        },
+        {
+          "id": 115,
+          "image": "https://i.imgur.com/lqE5Rw0.png",
+          "color": "#F0F1F1",
+          "title": "Fronted"
+        },
+        {
+          "id": 116,
+          "image": "https://i.imgur.com/jSpDwys.png",
+          "color": "#f3f2fa",
+          "title": "Backend"
+        }
+      ]
+    },
+    {
+      "id": "eeeeee",
+      "title": "Recommended",
+      "type": "Jobs",
+      "values": [
+        {
+          "id": "webDesigner/test1",
+          "title": "Web Designer",
+          "location": "Jalisco, Mexico",
+          "image": "https://i.imgur.com/CJQnWmA.jpeg",
+          "description": "Web designer",
+          "owner": {
+            "id": "y08ay0hior12hiohioqf",
+            "name": "VanHack",
+            "logo": "https://imgur.com/a/XNlgbTs",
+            "date": "29/03/2022"
+          }
+        },
+        {
+          "id": "android/fronted",
+          "title": "Android Fronted",
+          "location": "Buenos Aires, Argentina",
+          "image": "https://i.imgur.com/vD1sskV.jpeg",
+          "description": "Android Fronted con al menos 2 años de experiencia en Python",
+          "owner": {
+            "id": "y08ay0hior12hiohioqf",
+            "name": "VanHack",
+            "logo": "https://imgur.com/a/COFsnBK",
+            "date": "30/01/2022"
+          }
+        },
+        {
+          "id": "",
+          "title": "Architect",
+          "location": "Santiago, Chile",
+          "image": "https://i.imgur.com/80mw0Ig.png",
+          "description": "Arquitecto con al menos 5 años de experiencia",
+          "owner": {
+            "id": "y08ay0hior12hiohioqf",
+            "name": "VanHack",
+            "logo": "https://imgur.com/a/mIkT6tt",
+            "date": "20/02/2022"
+          }
+        },
+        {
+          "id": "iOS/developer",
+          "title": "iOS Developer Junior",
+          "location": "Bogotá, Colombia",
+          "image": "https://i.imgur.com/Ik1CRCe.jpeg",
+          "description": "iOS Developer Junior, Swift languaje, UIKit, Core Animation, Core Data, SwiftUI(opcional), RXSwift",
+          "owner": {
+            "id": "y08ay0hior12hiohioqf",
+            "name": "VanHack",
+            "logo": "https://imgur.com/a/uNr5LOJ.png",
+            "date": "15/03/2022"
+          }
+        }
+      ]
+    },
+    {
+      "id": "uuuuuu",
+      "title": "Populars",
+      "type": "Jobs",
+      "values": [
+        {
+          "id": "webDesigner/test1",
+          "title": "Web Designer",
+          "location": "Jalisco, Mexico",
+          "image": "https://i.imgur.com/CJQnWmA.jpeg",
+          "description": "Web designer",
+          "owner": {
+            "id": "y08ay0hior12hiohioqf",
+            "name": "VanHack",
+            "logo": "https://imgur.com/a/XNlgbTs",
+            "date": "29/03/2022"
+          }
+        },
+        {
+          "id": "android/fronted",
+          "title": "Android Fronted",
+          "location": "Buenos Aires, Argentina",
+          "image": "https://i.imgur.com/vD1sskV.jpeg",
+          "description": "Android Fronted con al menos 2 años de experiencia en Python",
+          "owner": {
+            "id": "y08ay0hior12hiohioqf",
+            "name": "VanHack",
+            "logo": "https://imgur.com/a/COFsnBK",
+            "date": "30/01/2022"
+          }
+        },
+        {
+          "id": "",
+          "title": "Architect",
+          "location": "Santiago, Chile",
+          "image": "https://i.imgur.com/WjchHQL.jpeg",
+          "description": "Arquitecto con al menos 5 años de experiencia",
+          "owner": {
+            "id": "y08ay0hior12hiohioqf",
+            "name": "VanHack",
+            "logo": "https://imgur.com/a/mIkT6tt",
+            "date": "20/02/2022"
+          }
+        },
+        {
+          "id": "iOS/developer",
+          "title": "iOS Developer Junior",
+          "location": "Bogotá, Colombia",
+          "image": "https://i.imgur.com/Ik1CRCe.jpeg",
+          "description": "iOS Developer Junior, Swift languaje, UIKit, Core Animation, Core Data, SwiftUI(opcional), RXSwift",
+          "owner": {
+            "id": "y08ay0hior12hiohioqf",
+            "name": "VanHack",
+            "logo": "https://imgur.com/a/uNr5LOJ.png",
+            "date": "15/03/2022"
+          }
+        }
+      ]
+    }
+  ]
+}
+
