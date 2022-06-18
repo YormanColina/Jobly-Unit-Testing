@@ -61,6 +61,19 @@ De ésta forma se hizo prueba de los modelos en la Arquitectura MVVM, de igual m
 Tambien se hizo tests de funcionalidades probando distintas funciones matematicas y logicas
 
 ~~~
-        XCTAssertEqual(functions.subtract(100, 30), functions.multiply(7, 10))
-        XCTAssertEqual(functions.add(10, 5), functions.add(9, 6))
+        let listStrings = ["x", "pedro", "juan", "ana", "a", "yorman"]
+        let listNums = [2,3,4,2,3,6,2,7,2,9,2]
+
+        // Eliminar elemtos especificos de un array
+        func func subtracktElement(_ coincidence: String, _ list: [String]) -> [String] 
+        
+        // Sumar todos los numeros pares o impares de una lista
+        func sumaDeParesEImpares(par: Bool, list: [Int]) -> Int
+        
+        
+
+        let listStringsWithoutCoincidence = functions.subtracktElement("juan", listStrings)
+        XCTAssertFalse(listStringsWithoutCoincidence.contains("juan"))
+        
+        XCTAssertEqual(functions.sumaDeParesEImpares(par: true, list: listNums), 20)
 ~~~
