@@ -10,18 +10,20 @@ import XCTest
 class UnitTestingTagsTests: XCTestCase {
     var functions = Functions()
 
-    func testSomeViewControllerFunctions() {
-        var lista = ["x", "pedro", "juan", "ana", "a", "yorman"]
-        var listanum = [1,2,3,4,5,6,3,8]
-        var lista2 = ["d", "de", "rty", "qedew"]
+    func testArrayFunctions() {
+        let lista = ["x", "pedro", "juan", "ana", "a", "yorman"]
+        let lista2 = ["f", "z", "fa", "pu"]
+        
         // Ordendo una lista en orden alfabetico
-      
+        let listSort = functions.sortList(list: lista)
+        XCTAssertGreaterThan(listSort[3], listSort[2])
         
         //Compararndo una lista con otra
-        XCTAssert(functions.compareLists(lista, listB: lista2))
+        XCTAssert(functions.compareLists(lista2, listB: lista2))
         
         // Verificando existiencia de un elemento
-        XCTAssertTrue(functions.subtracktElement("lll", lista).contains("lll"))
+        XCTAssertFalse(functions.subtracktElement("lll", lista).contains("lll"))
+        
     }
     
 
@@ -34,20 +36,20 @@ class UnitTestingTagsTests: XCTestCase {
         XCTAssertEqual(functions.divide(50.0, 3.0), 16.666666)
         XCTAssertEqual(20, functions.subtract(100, 60) / 2)
         
-        print(functions.subtracktNumber(2, list: [2,3,4,2,3,6,2,7,2,9,2]))
-        print(functions.sumaDeParesEImpares(44, list: [1,2,3,4]))
-        
         //
     }
     
     func testAlgoritms() {
-        let listaStrings = ["x", "pedro", "juan", "ana", "a", "yorman"]
-        let listaNums = [2,3,4,2,3,6,2,7,2,9,2]
+        let listStrings = ["x", "pedro", "juan", "ana", "a", "yorman"]
+        let listNums = [2,3,4,2,3,6,2,7,2,9,2]
         
-//        print(vc.sortList(list: listaStrings))
-        print(functions.sortList(list: listaStrings))
-        print(functions.subtracktNumber(2, list:listaNums ))
-        print(functions.sumaDeParesEImpares(44, list: listaNums))
+        let listStringsWithoutCoincidence = functions.subtracktElement("juan", listStrings)
+        XCTAssertFalse(listStringsWithoutCoincidence.contains("juan"))
+        
+        let listNumbersWithoutCoincidence = functions.subtracktNumber(2, list: listNums)
+        XCTAssertFalse(listNumbersWithoutCoincidence.contains(2))
+        
+        XCTAssertEqual(functions.sumaDeParesEImpares(par: true, list: listNums), 20)
     }
     
     

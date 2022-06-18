@@ -11,7 +11,7 @@ import ObjectMapper
 
 class JoblyTests: XCTestCase {
     
-    var homeviewModel: HomeViewModel!
+    private var homeviewModel: HomeViewModel!
     
     override func setUpWithError() throws {
         homeviewModel = HomeViewModel(apiService: ApiServicesFake())

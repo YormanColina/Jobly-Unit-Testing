@@ -85,10 +85,10 @@ class Functions {
         return listAux
     }
     
-    func sumaDeParesEImpares(_ num: Int, list: [Int]) -> Int {
+    func sumaDeParesEImpares(par: Bool, list: [Int]) -> Int {
         var suma = 0
         
-        if num%2 == 0 {
+        if par {
             for numero in list {
                 if numero%2 == 0 {
                     suma += numero
