@@ -1,3 +1,22 @@
+# Unit Testing
+En la mayoria de ocasiones programando te vas a encontrar con la necesidad de probar tu codigo, aqui es donde entran los Unit Testing y la importancia que tienen a la hora de hacer pruebas de tu codigo.
+
+Los Unit Testing es un proceso de desarrollo en el se examinan y se hacen pruebas de las partes comprobable de tu aplicacion, probando desde pequeñas partes que funcionan de manera independiente hasta hacer un tests completo del flujo de la App. El objetivo principal de las pruebas unitarias es aislar el código escrito para probar y determinar si funciona según lo previsto.
+
+## Ventajas de los Unit Testing
+
+- Cuanto antes se identifique un problema, menos errores compuestos se producirán.
+- Los costes de solucionar un problema a tiempo pueden superar rápidamente el coste de solucionarlo más tarde.
+- Los desarrolladores pueden hacer cambios rápidamente en la base de código.
+- Los desarrolladores también pueden reutilizar el código, migrándolo a nuevos proyectos.
+- 
+
+## Desventajas de los Unit Testing
+- Las pruebas no descubrirán todos los errores.
+- Es posible que sea necesario escribir más líneas de código de prueba para probar una línea de código, creando una posible inversión de tiempo.
+- La unidad solo prueba conjuntos de datos y su funcionalidad; no detectará errores en la integración.
+
+
 # Descripción
 </div>
 
