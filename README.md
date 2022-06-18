@@ -20,7 +20,7 @@ Los Unit Testing es un proceso de desarrollo en el se examinan y se hacen prueba
 # Descripción
 </div>
 
-Este es un proyecto en el cual se hace uso de los Unit Testing, probando distintas areas del proyecto haciendo uso de la libreria XCTest para hacer los test, hereando de la clase XCTestCase y haciendo uso de los distintos XCTAsserts para testear
+En este proyecto se implementaron Unit Tests orientado al testeo funcional y de arquitectura, probando la arquitectura MVVM haciendo uso del framework XCTest el cual permite hacer uso de los XCTAssert para realizar las pruebas
 
 Se realizó Test de diferentes partes del proyecto como por ejemplo, el mapeo de la información del servidor a los distintos modelos por ejemplo:
 
@@ -32,7 +32,8 @@ Se realizó Test de diferentes partes del proyecto como por ejemplo, el mapeo de
     XCTAssertEqual(home?.widgets[0].type, "Categories")
 ~~~
 
-De ésta forma se hizo prueba de los modelos en la Arquitectura MVVM, de igual manera tambien se realizó test del ViewModel, por ejemplo asegurándose que todos los llamados a la API se realizáran de manera exitosa y obteniendo la información
+
+De ésta forma se hizo prueba de los modelos en la Arquitectura MVVM, de igual manera tambien se realizó test del ViewModel, por ejemplo asegurándose que todos los llamados a la API se realizáran de manera exitosa y obteniendo la información. Tambien se hizo uso de la clase XCTestExpectation para el llamado de funciones que se ejecutan de manera asincrona
 
 ~~~
     private var homeviewModel: HomeViewModel!
@@ -42,21 +43,24 @@ De ésta forma se hizo prueba de los modelos en la Arquitectura MVVM, de igual m
     }
 
     func testsArquitec() {
-    homeviewModel.configurateHome {
+        let expectation = XCTestExpectation(description: "Calling services..")
+        homeviewModel.configurateHome {
         // Aqui se testea el homeViewModel
-    }
-~~~
-
-Tambien se hizo uso de la clase XCTestExpectation para el llamado de funciones que se ejecutan de manera asincrona
-
-~~~
-    let expectation = XCTestExpectation(description: "Calling services..")
-    homeviewModel.configurateHome {
-        // Aqui se testea el homeViewModel
+        XCTAssertEqual(self.homeviewModel.home.widgets[0].type, "Categories")
+        XCTAssertEqual(self.homeviewModel.home.widgets[0].title, "Categories")
         
-        // Aca se llama a funcion que indica que la expectativas fueron cumplidas, se llama al final cuando todos los test hayan sido exitosos
+        // Aqui se llama a funcion que indica que la expectativas fueron cumplidas, se llama al final cuando todos los test hayan sido exitosos
         expectation.fulfill()
-    }
+        }
     // Se le dice que el tiempo de espera maximo para que la expectacion se cumpla va a ser de 10 segundos
-    wait(for: [expectation], timeout: 10.0)
+        wait(for: [expectation], timeout: 10.0)
+    }
+    
+~~~
+
+Tambien se hizo tests de funcionalidades probando distintas funciones matematicas y logicas
+
+~~~
+        XCTAssertEqual(functions.subtract(100, 30), functions.multiply(7, 10))
+        XCTAssertEqual(functions.add(10, 5), functions.add(9, 6))
 ~~~
