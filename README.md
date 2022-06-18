@@ -9,7 +9,7 @@ Los Unit Testing es un proceso de desarrollo en el se examinan y se hacen prueba
 - Los costes de solucionar un problema a tiempo pueden superar rápidamente el coste de solucionarlo más tarde.
 - Los desarrolladores pueden hacer cambios rápidamente en la base de código.
 - Los desarrolladores también pueden reutilizar el código, migrándolo a nuevos proyectos.
-- 
+
 
 ## Desventajas de los Unit Testing
 - Las pruebas no descubrirán todos los errores.
