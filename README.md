@@ -65,7 +65,7 @@ Tambien se hizo tests de funcionalidades probando distintas funciones matematica
         let listNums = [2,3,4,2,3,6,2,7,2,9,2]
 
         // Eliminar elemtos especificos de un array
-        func func subtracktElement(_ coincidence: String, _ list: [String]) -> [String] 
+        func subtracktElement(_ coincidence: String, _ list: [String]) -> [String] 
         
         // Sumar todos los numeros pares o impares de una lista
         func sumaDeParesEImpares(par: Bool, list: [Int]) -> Int
