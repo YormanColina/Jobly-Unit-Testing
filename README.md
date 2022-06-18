@@ -7,8 +7,8 @@ Se realizo Test de diferentes partes del proyecto como por ejemplo, el mapeo de 
 
 ~~~
 // Verificando el tipo de dato de un valor que puede tomar distintos tipos de lista
-XCTAssertTrue(home?.widgets[0].values is [Categorie])
+    XCTAssertTrue(home?.widgets[0].values is [Categorie])
 
 // Verificando el titulo del widget que debe tener el modelo con el que se va a pintar la celda
-XCTAssertEqual(home?.widgets[0].type, "Categories")
+    XCTAssertEqual(home?.widgets[0].type, "Categories")
 ~~~
