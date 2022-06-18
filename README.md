@@ -26,5 +26,18 @@ De ésta forma se hizo prueba de los modelos en la Arquitectura MVVM, de igual m
     homeviewModel.configurateHome {
         // Aqui se testea el homeViewModel
     }
+~~~
 
+Tambien se hizo uso de la clase XCTestExpectation para el llamado de funciones que se ejecutan de manera asincrona
+
+~~~
+    let expectation = XCTestExpectation(description: "Calling services..")
+    homeviewModel.configurateHome {
+        // Aqui se testea el homeViewModel
+        
+        // Aca se llama a funcion que indica que la expectativas fueron cumplidas, se llama al final cuando todos los test hayan sido exitosos
+        expectation.fulfill()
+    }
+    // Se le dice que el tiempo de espera maximo para que la expectacion se cumpla va a ser de 10 segundos
+    wait(for: [expectation], timeout: 10.0)
 ~~~
