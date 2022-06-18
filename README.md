@@ -1,7 +1,7 @@
 # Unit Testing
-En la mayoria de ocasiones programando te vas a encontrar con la necesidad de probar tu codigo, aqui es donde entran los Unit Testing y la importancia que tienen a la hora de probar tu codigo.
+En la mayoria de ocasiones programando te vas a encontrar con la necesidad de probar tu código, aqui es donde entran los Unit Testing y la importancia que tienen a la hora de probar tu código.
 
-Los Unit Testing es un proceso de desarrollo en el se examinan y se hacen pruebas de las partes comprobables de tu aplicacion, probando desde pequeñas partes que funcionan de manera independiente hasta hacer un tests completo del flujo de la App. El objetivo principal de las pruebas unitarias es aislar el código escrito para probar y determinar si funciona según lo previsto.
+Los Unit Testing es un proceso de desarrollo en el que se examinan y se hacen pruebas de las partes comprobables de tu aplicación, probando desde pequeñas partes que funcionan de manera independiente hasta hacer un tests completo del flujo de usuario. El objetivo principal de las pruebas unitarias es aislar el código escrito para probar y determinar si funciona según lo previsto y protegerlo de los cambios que sufra en el futuro
 
 ## Ventajas de los Unit Testing
 
